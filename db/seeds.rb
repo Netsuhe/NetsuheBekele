@@ -10,7 +10,7 @@ Work.destroy_all
 
 
 bride = Tag.create!(name: 'Bridal')
-events = Tag.create!(name: 'Events')
+events = Tag.create!(name: 'Special Events')
 special = Tag.create!(name: 'Special FX')
 
 wedding = Work.create!([{name: 'Summer Bride', img_url: ''}, {name:}])
