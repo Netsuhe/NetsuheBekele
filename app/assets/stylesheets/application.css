@@ -14,10 +14,14 @@
  *= require_self
  */
 
-/*h1{
+h1{
   font-family: 'Libre Barcode 39 Text', cursive;
 }
 
 p{
-  font-family: 'Lobster', cursive;
-}*/
+  font-family: 'Dancing Script', cursive;
+}
+
+ul{
+  font-family: 'EB Garamond', serif;
+}

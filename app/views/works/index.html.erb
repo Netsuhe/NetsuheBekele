@@ -1,1 +1,25 @@
 <h1>Portfolio of Works</h1>
+<!-- This is the works class and I have it render as porfolio -->
+<h2>Bridal</h2>
+
+<% @works.each do |work| %>
+<% if work.tag_id == 1 %>
+<%= image_tag work.img_url %>
+<% end %>
+<% end %>
+
+<h2>Special Events</h2>
+
+<% @works.each do |work| %>
+<% if work.tag_id == 2 %>
+<%= image_tag work.img_url %>
+<% end %>
+<% end %>
+
+<h2>Special FX</h2>
+
+<% @works.each do |work| %>
+<% if work.tag_id == 3 %>
+<%= image_tag work.img_url %>
+<% end %>
+<% end %>

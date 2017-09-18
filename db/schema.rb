@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 20170918145600) do
   create_table "works", force: :cascade do |t|
     t.string "name"
     t.string "img_url"
+    t.bigint "tag_id"
+    t.index ["tag_id"], name: "index_works_on_tag_id"
   end
 
 end

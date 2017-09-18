@@ -9,25 +9,24 @@ Tag.destroy_all
 Work.destroy_all
 Comment.destroy_all
 
-
 bride = Tag.create!(name: 'Bridal')
 events = Tag.create!(name: 'Special Events')
 special = Tag.create!(name: 'Special FX')
 
-wedding = Work.create!(name: 'Summer Bride', img_url: '/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/IMG_6659 2.JPG')
-wedding2 = Work.create!(name: 'Summer Bride', img_url: '/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/IMG_6658 2.JPG')
-wedding3 = Work.create!(name: 'Summer Bride', img_url: '/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/IMG_6662.JPG')
-wedding4 = Work.create!(name: 'Summer Bride', img_url: '/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/IMG_6663 2.JPG')
+weddings = Work.create!(name: 'Bridal', img_url: '/images/IMG_1.JPG', tag_id: 1)
+wedding2 = Work.create!(name: 'Bridal', img_url: '/images/IMG_2.JPG', tag_id: 1)
+wedding3 = Work.create!(name: 'Bridal', img_url: '/images/IMG_3.JPG', tag_id: 1)
+wedding4 = Work.create!(name: 'Bridal', img_url: '/images/IMG_4.JPG', tag_id: 1)
 
 
-ashley = Work.create!(name: 'Ashley Wilson', img_url:'/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/IMG_6664 2.JPG')
-olive = Work.create!(name: 'Birthday', img_url:'/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/IMG_6666 2.jpg')
-bodeshi = Work.create!(name: 'Engagement', img_url:'/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/IMG_6665 2.JPG')
-blacktie = Work.create!(name: 'Blacktie Events', img_url: '/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/IMG_6667.JPG')
+ashley = Work.create!(name: 'Special Events', img_url:'/images/IMG_6664 2.JPG', tag_id: 2)
+olive = Work.create!(name: 'Special Events', img_url:'/images/IMG_6666 2.jpg', tag_id: 2)
+bodeshi = Work.create!(name: 'Special Events', img_url:'/images/IMG_6665 2.JPG', tag_id: 2)
+blacktie = Work.create!(name: 'Special Events', img_url: '/images/IMG_6667.JPG', tag_id: 2)
 
 
-harley = Work.create!(name: 'Harley Quinn', img_url: '/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/FullSizeRender 2.jpg')
-harley2 = Work.create!(name: 'Harley Quinn', img_url: '/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/FullSizeRender 3.jpg')
-mary = Work.create!(name: 'Mary Jane Watson', img_url: '/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/FullSizeRender.jpg')
-blackcat = Work.create!(name: 'Black Cat', img_url: '/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/FullSizeRender 4.jpg')
-blackcat2 = Work.create!(name: 'Black Cat', img_url: '/Users/Netsuhe/wdi/projects/NetsuheBekele/app/assets/images/pictures/FullSizeRender 5.jpg')
+harley = Work.create!(name: 'Special FX', img_url: '/images/FullSizeRender 2.jpg', tag_id: 3)
+harley2 = Work.create!(name: 'Special FX', img_url: '/images/FullSizeRender 3.jpg', tag_id: 3)
+mary = Work.create!(name: 'Special FX', img_url: '/images/FullSizeRender.jpg', tag_id: 3)
+blackcat = Work.create!(name: 'Special FX', img_url: '/images/FullSizeRender 4.jpg', tag_id: 3)
+blackcat2 = Work.create!(name: 'Special FX', img_url: '/images/FullSizeRender 5.jpg', tag_id: 3)
