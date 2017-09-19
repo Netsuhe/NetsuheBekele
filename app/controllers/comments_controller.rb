@@ -10,16 +10,17 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
   end
 
-  def edit
-
+  def create
+    @comment = Comment.create(comment_params)
+    redirect_to
   end
 
-  def create
-
+  def edit
+    @comment = Comment.find(params[:id])
   end
 
   def update
-
+    @comment = C
   end
 
   def destroy
