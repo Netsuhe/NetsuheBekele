@@ -1,0 +1,25 @@
+<h1>CONTACTS US</h1>
+
+<h3>Leave us a comment if you have any questions, want further detail or just want to say HI!<br>We would love to hear from you!<br>Please include the following in your inquiry.</h3>
+
+<ol>
+<li>Your name</li>
+<li>Your contact information</li>
+<li>Also be as specific as possible with your inquiry</li>
+</ol>
+
+<p>&hearts; Can't wait to hear from you beautiful! &hearts;</p>
+
+<h2><a href="/comments/new">Contact form</a></h2>
+
+
+<% @comments.each do |comment| %>
+<div class="comment">
+
+<p><%= comment.body %></p>
+<%= link_to "Edit", edit_comment_path(comment), class: "button" %>
+<%= form_for comment, method: :delete do |f|  %>
+<% f.submit "Delete"%>
+<% end %>
+</div>
+<% end %>
