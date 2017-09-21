@@ -26,7 +26,7 @@ img{
   max-width: 400px;
   max-height: 400px;
   position: static;
-  
+
 }
 header{
   font-family: 'Libre Barcode 39 Text', cursive;
@@ -116,4 +116,15 @@ footer{
 .fa-instagram{
   color: white;
   background: #701c4e;
+}
+.flash {
+  border: 1px solid black;
+  padding: 1em;
+  background: #eee;
+}
+
+.alert  { color: red;  }
+.notice {
+  color: blue;
+
 }

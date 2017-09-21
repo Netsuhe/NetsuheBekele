@@ -13,7 +13,10 @@ class CommentsController < ApplicationController
 
   def create
     @comment = Comment.create!(comment_params)
+    if @comment.save
+    flash[:notice] = "Thank you for your message and cant wait to read it!"
     redirect_to comments_path
+  end
   end
 
   def edit
