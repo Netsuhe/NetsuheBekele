@@ -1,6 +1,10 @@
-<h1>CONTACTS US</h1>
+<header>CONTACTS US</header>
 
-<h3>Leave us a comment if you have any questions, want further detail or just want to say HI!<br>We would love to hear from you!<br>Please include the following in your inquiry.</h3>
+<h3>Leave us a comment if you have any questions, <br>
+  have an inquiry regarding a service or want to leave us a review!<br>
+  We would love to hear from you even if its just to say HI!<br></h3>
+
+<h4>If you have an inquiry, please include the following in your inquiry.</h4>
 
 <ol>
 <li>Your name</li>
@@ -8,18 +12,20 @@
 <li>Also be as specific as possible with your inquiry</li>
 </ol>
 
-<p>&hearts; Can't wait to hear from you beautiful! &hearts;</p>
+<h4>&hearts; Can't wait to hear from you beautiful! &hearts;</h4>
 
-<h2><a href="/comments/new">Contact form</a></h2>
+<h4><a href="/comments/new">Contact form</a></h4>
 
 
 <% @comments.each do |comment| %>
 <div class="comment">
 
 <p><%= comment.body %></p>
+<div class="btn">
 <%= link_to "Edit", edit_comment_path(comment), class: "button" %>
 <%= form_for comment, method: :delete do |f|  %>
 <% f.submit "Delete"%>
 <% end %>
+</div>
 </div>
 <% end %>

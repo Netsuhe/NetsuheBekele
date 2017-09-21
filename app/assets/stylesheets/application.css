@@ -14,25 +14,106 @@
  *= require_self
  */
  body{
-   
+   background-image: url(img_15.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: 350px 700px;
+   text-align: center;
+   color: black;
+   text-justify: inter-word;
  }
-
+img{
+  max-width: 400px;
+  max-height: 400px;
+  position: static;
+  
+}
+header{
+  font-family: 'Libre Barcode 39 Text', cursive;
+  font-size: 70px;
+}
 h1{
   font-family: 'Libre Barcode 39 Text', cursive;
   font-size: 70px;
 }
-
-p{
-  font-family: 'Dancing Script', cursive;
-  font-size: 20px;
-}
-
-ul{
-  font-family: 'EB Garamond', serif;
+h2{
+  font-family: 'Poiret One', cursive;
+  font-weight: 100px;
+  text-decoration: underline;
 }
 h3{
-  font-family: 'EB Garamond', serif;
+  font-family: 'Quicksand', sans-serif;
+}
+h4{
+  font-family: 'Quicksand', sans-serif;
+}
+h6{
+  padding-top: 6cm;
+  font-family: 'Lobster Two', cursive;
+  font-size: 20px;
+
+}
+p{
+  font-family: 'Lobster Two', cursive;
+  font-size: 20px;
+}
+ol{
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: none;
+}
+ul{
+  font-family: 'Quicksand', sans-serif;
+  background-color: #ffffff;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 13%;
+  position: fixed;
+  height: 120%;
+  overflow: auto;
+}
+a{
+  display: block;
 }
 footer{
-  align-content: center;
+  position: fixed;
+  display: block;
+  align-items: center;
+  height: 4rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+
+}
+.image{
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+}
+.button{
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+  border-radius: 4px;
+}
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.comment{
+  font-family: 'Poiret One', cursive;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+}
+.fa-instagram{
+  color: white;
+  background: #701c4e;
 }

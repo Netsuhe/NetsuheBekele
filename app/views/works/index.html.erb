@@ -1,7 +1,7 @@
-<h1>Portfolio of Works</h1>
+<header>PORTFOLIO</header>
 <!-- This is the works class and I have it render as porfolio -->
 <h2>Bridal</h2>
-
+<div class="image">
 <% @works.each do |work| %>
 <% if work.tag_id == 1 %>
 <%= image_tag work.img_url %>
@@ -23,3 +23,4 @@
 <%= image_tag work.img_url %>
 <% end %>
 <% end %>
+</div>
